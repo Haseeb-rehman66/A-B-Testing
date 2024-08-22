@@ -7,7 +7,7 @@ A/B Testing Implementation: Dynamically render different components based on A/B
 Redux State Management: Manage A/B test state using Redux.
 Component Testing: Comprehensive unit tests using Jest and React Testing Library.
 # Admin portal
-The admin portal is crucial for dynamically managing and altering the variant displayed to users. The approach involves using the portal to adjust the variant of the feature being tested—either Version A or Version B—without requiring direct changes to the codebase. Using the admin portal we set the variant in  the local storage of the browser for setting up the fixed variant for the current user.
+The admin portal is crucial for dynamically managing and altering the variant displayed to users. The approach involves using the portal to adjust the variant of the feature being tested—either Version A or Version B—without requiring direct changes to the codebase. Using the admin portal we set the variant in  the local storage of the browser as well as set the state of redux store for setting up the fixed variant for the current user.
 # Technologies Used
 React: Frontend framework used for building the user interface.
 Redux: State management library to handle global state.

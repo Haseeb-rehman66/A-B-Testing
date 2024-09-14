@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+# A/B Testing
+This project implements an A/B testing mechanism in a React application using Redux for state management. The application dynamically renders different components (FeatureA and FeatureB) based on the A/B test variant assigned to the user.
+# Purpose
+The goal of this project is to demonstrate the ability to implement A/B testing in a front-end application, allowing for experimentation and analysis of user interactions with different UI variations.
+# Features
+A/B Testing Implementation: Dynamically render different components based on A/B test variants.
+Redux State Management: Manage A/B test state using Redux.
+Component Testing: Comprehensive unit tests using Jest and React Testing Library.
+# Admin portal
+The admin portal is crucial for dynamically managing and altering the variant displayed to users. The approach involves using the portal to adjust the variant of the feature being tested—either Version A or Version B—without requiring direct changes to the codebase. Using the admin portal we set the variant in  the local storage of the browser as well as set the state of redux store for setting up the fixed variant for the current user.
+# Technologies Used
+React: Frontend framework used for building the user interface.
+Redux: State management library to handle global state.
+TypeScript: Superset of JavaScript that adds static typing.
+Jest: Testing framework used for unit tests.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Usage
+The application is designed to render either FeatureA or FeatureB based on the A/B test variant provided in the Redux store.
 
-## Available Scripts
+# Rendering Components Based on Variants
+To simulate the A/B test, the Redux store is preloaded with a variant ('A' or 'B'). Depending on the variant, the application will render FeatureA or FeatureB and set to local storage.
+Variant A: The app will display FeatureA.
+Variant B: The app will display FeatureB.
 
-In the project directory, you can run:
+# How to run this code
+Clone this repo into local machine then run command 
+npm install
+to install the dependencies of project. Then run command 
+npm start
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
